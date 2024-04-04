@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MHNowモンスター攻略早見表</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: "Kaisei Opti", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.6vw;
+      background-color: ghostwhite;
+    }
+    h1 {
+      background-color: coral;
+      padding: .7rem;
+      font-weight: bolder;
+      font-size: 3rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid darkslategrey 3px;
+      border-radius: 7px;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      grid-column-start: 1;
+      grid-column-end: span 5;
+    }
+    img {
+      border: none;
+    }
+    #monster-table {
+      display: grid;
+      /* grid-template-columns: 102px 102px 102px 102px 102px; */
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    }
+    .monster-info {
+      display: flex;
+      flex-direction: column;
+      border: solid burlywood 1px;
+    }
+    .monster-icon {
+      /* width: 100px;
+      height: 100px; */
+      width: 100%;
+      height: 100%;
+    }
+    .monster-icon > img {
+      width: 100%;
+      height: 100%;
+      background-color: #f5e7ce;
+    }
+    .monster-eco {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    .monster-biome, .monster-weak {
+      display: flex;
+      flex-direction: row;
+      border: solid burlywood 1px;
+      height: 2rem;
+    }
+    .monster-biome {
+      border-right: solid linen 1px;
+    }
+    .monster-weak {
+      justify-content: flex-end;
+      border-left: solid linen 1px;
+    }
+    .monster-biome > img, .monster-weak > img {
+      width: 2rem;
+      height: 2rem;
+    }
+    .monster-rare6-drop {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: maroon;
+      padding: 2px;
+      height: 2rem;
+    }
+    .guide {
+      color: maroon;
+      border: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="monster-table">
+    <h1>MHNowモンスター攻略早見表</h1>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_6.png" alt="ドスジャグラス" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_fire.png" alt="火" border="0">
+          <img src="./img/w_poison.png" alt="毒" border="0">
+          <img src="./img/w_sleep.png" alt="睡眠" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        前脚
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_7.png" alt="クルルヤック" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_water.png" alt="水" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        頭
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_8.png" alt="プケプケ" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_thunder.png" alt="雷" border="0">
+          <img src="./img/w_sleep.png" alt="睡眠" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_9.png" alt="ボルボロス" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_fire.png" alt="火" border="0">
+          <img src="./img/w_poison.png" alt="毒" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_10.png" alt="ドスギルオス" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_water.png" alt="水" border="0">
+          <img src="./img/w_sleep.png" alt="睡眠" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        頭
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_11.png" alt="トビカガチ" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_water.png" alt="水" border="0">
+          <img src="./img/w_poison.png" alt="毒" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_12.png" alt="パオウルムー" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_fire.png" alt="火" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_13.png" alt="ジュラトドス" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_thunder.png" alt="雷" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        頭
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_14.png" alt="アンジャナフ" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_water.png" alt="水" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_15.png" alt="リオレイア" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_thunder.png" alt="雷" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_16.png" alt="レイギエナ" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_fire.png" alt="火" border="0">
+          <img src="./img/w_poison.png" alt="毒" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        右翼・左翼
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_17.png" alt="ディアブロス" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+          <img src="./img/w_para.png" alt="麻痺" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        右角・左角
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_18.png" alt="リオレウス" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_thunder.png" alt="雷" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_19.png" alt="ディアブロス亜種" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+          <img src="./img/w_para.png" alt="麻痺" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        右角・左角
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_20.png" alt="リオレイア亜種" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_thunder.png" alt="雷" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_21.png" alt="ラドバルキン" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        頭
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_22.png" alt="バフバロ" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_fire.png" alt="火" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        右角・左角
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_23.png" alt="ベリオロス" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_fire.png" alt="火" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_24.png" alt="ジンオウガ" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_27.png" alt="リオレウス亜種" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_28.png" alt="ツィツィヤック" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        頭（2回）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_29.png" alt="オドガロン" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+          <img src="./img/w_para.png" alt="麻痺" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        前脚
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_30.png" alt="イビルジョー" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_desert.webp" alt="砂漠" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_thunder.png" alt="雷" border="0">
+          <img src="./img/w_dragon.png" alt="竜" border="0">
+          <img src="./img/w_poison.png" alt="毒" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        頭
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon">
+        <img src="./img/monster_31.png" alt="プケプケ亜種" border="0">
+      </div>
+      <div class="monster-eco">
+        <div class="monster-biome">
+          <img src="./img/b_forest.webp" alt="森林" border="0">
+          <img src="./img/b_swamp.webp" alt="沼地" border="0">
+        </div>
+        <div class="monster-weak">
+          <img src="./img/w_ice.png" alt="氷" border="0">
+          <img src="./img/w_poison.png" alt="毒" border="0">
+        </div>
+      </div>
+      <div class="monster-rare6-drop">
+        尻尾（切断）
+      </div>
+    </div>
+    <div class="monster-info">
+      <div class="monster-icon guide"><span>アイコン</span></div>
+      <div class="monster-eco">
+        <div class="monster-biome guide"><span>環境</span></div>
+        <div class="monster-weak guide"><span>弱点</span></div>
+      </div>
+      <div class="monster-rare6-drop guide"><span>R6ドロップ部位</span></div>
+    </div>
+  </div>
+</body>
+</html>
