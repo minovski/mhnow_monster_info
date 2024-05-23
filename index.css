@@ -89,3 +89,23 @@ img {
   justify-content: center;
   align-items: center;
 }
+.stone-white {
+  border: 10px solid white;
+  box-sizing: border-box;
+}
+.stone-yellow {
+  border: 10px solid yellow;
+  box-sizing: border-box;
+}
+.stone-blue {
+  border: 10px solid blue;
+  box-sizing: border-box;
+}
+.stone-turquoise {
+  border: 10px solid turquoise;
+  box-sizing: border-box;
+}
+.stone-red {
+  border: 10px solid red;
+  box-sizing: border-box;
+}
