@@ -109,3 +109,7 @@ img {
   border: 10px solid red;
   box-sizing: border-box;
 }
+.stone-none {
+  border: 10px solid black;
+  box-sizing: border-box;
+}
